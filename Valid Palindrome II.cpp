@@ -3,6 +3,9 @@ Problem: https://leetcode.com/problems/valid-palindrome-ii/description
 /*
 Approach 1: TLE
 Remove each character and check if the resulting string is palindrome
+
+TC: O(n) -> checkpalindrom() takes O(n) time and validpalindrome also takes O(n) time
+SC: O(n) -> for the temp vector
 */
 
 bool checkpalindrome(string str)
@@ -42,8 +45,11 @@ Approach 2:
    - if from i+1 to j is a palindrome
    or
    - if from i to j-1 is a palindrome
-3. If any of the 2 is a palindrome then we can return true, otherwise false because we cant make palindrome otherwise
+3. If any of the 2 is a palindrome then we can return true, otherwise false because we can't make a palindrome otherwise
 4. Since using 2 pointers we are keeping on checking from start to i & j to end so we need to check only in between
+
+TC: O(n) -> two pointer traversal
+SC: O(1) -> no extra space used
 */
 
 bool checkpalindrome(string str, int start, int end)
