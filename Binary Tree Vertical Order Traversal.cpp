@@ -1,11 +1,18 @@
 Problem: https://leetcode.com/problems/binary-tree-vertical-order-traversal
 
 /*
+        1 (0,0)
+      /        \
+     2 (1,-1)   3 (1,1)
+  /        \
+4 (2,-2)    5 (2,0)
+storing (horizontal level, vertical level)
+
 Approach:
 1. Store as {nodes, horizontal level, vertical level} in the queue
 2. horizontal + 1 for all children
 3. vertical + 1 for right children & vertical - 1 for left children
-4. store nodes based on vertical level in a map
+4. store nodes based on the vertical level in a map
 5. then finally convert the map to a vector
 
 TC: O(n) -> BFS traversal 
