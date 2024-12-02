@@ -1,7 +1,10 @@
 Problem: https://leetcode.com/problems/word-ladder/description
 
 /*
-beginWord="hit", endWord="cog", wordList = ["hot","dot","dog","lot","log","cog"]
+beginWord="hit"
+endWord="cog"
+wordList = ["hot","dot","dog","lot","log","cog"]
+
         hit
         /
       hot
