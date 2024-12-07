@@ -1,5 +1,8 @@
 Problem: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/description/
 
+Left, Right & Parent pointers
+Both nodes are definitely in tree
+
 /*
 Approach:
 1. Make copies of p & q as p_copy & q_copy. We need the actual nodes later so we make copies
