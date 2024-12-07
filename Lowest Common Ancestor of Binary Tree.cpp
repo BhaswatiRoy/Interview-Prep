@@ -1,5 +1,8 @@
 Problem: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
 
+Left & Right pointers only
+Both nodes are definitely in the tree
+
 /*
 Approach:
         1
