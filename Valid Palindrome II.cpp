@@ -4,7 +4,7 @@ Problem: https://leetcode.com/problems/valid-palindrome-ii/description
 Approach 1: TLE
 Remove each character and check if the resulting string is palindrome
 
-TC: O(n) -> checkpalindrom() takes O(n) time and validpalindrome also takes O(n) time
+TC: O(n^2) -> checkpalindrom() takes O(n) time and validpalindrome also takes O(n) time
 SC: O(n) -> for the temp vector
 */
 
