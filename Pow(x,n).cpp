@@ -3,10 +3,11 @@ Problem: https://leetcode.com/problems/powx-n/description
 /*
 Approach:
 ans = 1
-2^10 = (2*2)^5 = 4^5 (n%2==0)
-4^5 = 4 * 4^4 (n%2==1) -> ans = 1*4
-4^4 = (4*4)^2 = 16^2 (n%2==0)
-16^2 = (16*16)^1 = (256)^1 (n%2==1) -> ans = 1*4*256 = 1024
+2^10 = (2*2)^5 = 4^5 (n%2==1) (power is odd)
+4^5 = 4 * 4^4 (n%2==0) (power is even) -> ans = 1*4
+4^4 = (4*4)^2 = 16^2 (n%2==0) (power is even)
+16^2 = (16*16)^1 = (256)^1 (n%2==1) (power is odd)
+-> ans = 1*4*256 = 1024
 */
 
 double myPow(double x, int n) 
