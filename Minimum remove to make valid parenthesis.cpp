@@ -7,6 +7,9 @@ Now check if paren=0 in the end then all ( and ) have canceled out each other so
 If paren>0 lets say paren = 3 so we have 3 extra ( left hence we need to skip adding any 3 ( 
 If paren<0 lets say paren = -3 so we have 3 extra ) left hence we need to skip adding any 3 )
 Lastly we need to reverse the string because stack is LIFO
+
+TC: O(n)
+SC: O(n)
 */
 
 string minRemoveToMakeValid(string s) 
