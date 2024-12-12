@@ -8,7 +8,7 @@ ans = 1
 4^4 = (4*4)^2 = 16^2 (n%2==0) (power is even)
 16^2 = (16*16)^1 = (256)^1 (n%2==1) (power is odd)
 -> ans = 1*4*256 = 1024
-TC: O(logn) -> n is halved everytime
+TC: O(logn) -> n is halved everytime its even
 SC: O(1)
 */
 
